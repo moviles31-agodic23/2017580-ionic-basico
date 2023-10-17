@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>ticket-compra</title>
+</head>
+<body>
+    <h1 id="titulo">======TICKET DE COMPRA======</h1>
+    <section>
+        <div class="container"> 
+            <label for="articulo" class="textoNormal"> Articulo </label> <input type="text" id="articulo" class="input">
+        </div>
+        <div class="container"> 
+            <label for="precio" class="textoNormal"> Precio </label> <input type="number" id="precio" class="input">
+        </div>
+        <div><button class="boton" onclick="agregar()"> Calcular Total </button></div>
+    </section>
+    <section>
+            <h2 id="ticketFinal">====== TU TICKET ======</h2>
+            <div>
+                <ul id="listaTicket">
+                </ul>
+            </div>
+            <div name="barra" id="barra"></div>
+            <div class="total" id="total">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"> </script>
+</body>
+</html>
